@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/game_relativeLayout">
+
+    <!-- 2 scrollviews on 1 background
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background" />
+    -->
+
+    <!-- 2 scrollviews on 2 backgrounds -->
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/game_adView"
+        android:background="@drawable/background" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/view1"
+        android:background="@drawable/background"
+        android:visibility="gone" />
+
+    <!-- TOOLBAR -->
+    <Space
+        android:id="@+id/game_space_bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/game_space_top" />
+    <HorizontalScrollView
+        android:id="@+id/game_scroll_view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/game_space_bottom2"
+        android:layout_toEndOf="@+id/game_space_left"
+        android:layout_toRightOf="@+id/game_space_left"
+        android:layout_toLeftOf="@+id/game_space_right"
+        android:layout_toStartOf="@+id/game_space_right">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/game_linearLayout2">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <Space
+        android:id="@+id/game_space_top2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/game_scroll_view2" />
+    <!-- TOOLBAR END -->
+
+    <Space
+        android:id="@+id/game_space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/game_adView"
+        />
+    <Space
+        android:id="@+id/game_space_left"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/game_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/game_space_bottom"
+        android:layout_toEndOf="@+id/game_space_left"
+        android:layout_toRightOf="@+id/game_space_left"
+        android:layout_toLeftOf="@+id/game_space_right"
+        android:layout_toStartOf="@+id/game_space_right">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/game_linearLayout">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Space
+        android:id="@+id/game_space_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/game_scroll_view" />
+
+    <Space
+        android:id="@+id/game_space_right"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <!-- Sandbox expansion arrow buttons -->
+    <Button
+        android:id="@+id/game_toolbar_arrow_0"
+        android:tag="UP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/toolbar_arrow"
+        android:rotation="0"
+        android:onClick="onSandboxToolbarAddTilesArrowButtonClick"
+        android:visibility="gone"
+         />
+    <Button
+        android:id="@+id/game_toolbar_arrow_1"
+        android:tag="RIGHT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/toolbar_arrow"
+        android:rotation="90"
+        android:onClick="onSandboxToolbarAddTilesArrowButtonClick"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/game_toolbar_arrow_2"
+        android:tag="DOWN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/game_space_top2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/toolbar_arrow"
+        android:rotation="180"
+        android:onClick="onSandboxToolbarAddTilesArrowButtonClick"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/game_toolbar_arrow_3"
+        android:tag="LEFT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/toolbar_arrow"
+        android:rotation="270"
+        android:onClick="onSandboxToolbarAddTilesArrowButtonClick"
+        android:visibility="gone"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/game_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_selected"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+    />
+
+
+</RelativeLayout>

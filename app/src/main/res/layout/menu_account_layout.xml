@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_account_loggedin_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountLogoutClick"
+            android:text="@string/account_logout"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/menu_account_loggedin_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:layout_toRightOf="@+id/menu_account_loggedin_logout"
+            android:layout_toLeftOf="@+id/menu_account_loggedin_follows_activator"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/menu_account_loggedin_follows_activator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/menu_account_loggedin_search_activator"
+            android:layout_toStartOf="@+id/menu_account_loggedin_search_activator"
+            android:background="@drawable/background"
+            android:src="@drawable/account_follows"
+            android:onClick="onMenuAccountFollowsActivatorClick"
+            />
+
+        <ImageView
+            android:id="@+id/menu_account_loggedin_search_activator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/background"
+            android:textAlignment="center"
+            android:src="@drawable/account_search"
+            android:onClick="onMenuAccountSearchActivatorClick" />
+
+    </RelativeLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/menu_account_loggedin_search_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/account_find_friends_et_hint"
+            android:inputType="textPersonName"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/menu_account_loggedin_search_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background"
+            android:src="@drawable/account_search"
+            android:onClick="onMenuAccountSearchButtonClick"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/menu_account_loggedin_search_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/menu_account_loggedin_profile_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/menu_account_loggedin_follows_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!--<LinearLayout
+        android:id="@+id/menu_account_loggedin_selectionLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_account_loggedin_button_selection_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonSelectionLoginClick"
+            android:text="@string/account_login_title"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/menu_account_loggedin_button_selection_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonSelectionRegisterClick"
+            android:text="@string/account_register_title"
+            android:textAllCaps="false" />
+    </LinearLayout>-->
+
+</LinearLayout>

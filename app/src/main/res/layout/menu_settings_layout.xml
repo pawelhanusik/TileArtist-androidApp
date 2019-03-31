@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <!-- GAME -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_options_game_title"
+        android:textSize="24sp" />
+
+    <Switch
+        android:id="@+id/menu_settings_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_1" />
+    <Switch
+        android:id="@+id/menu_settings_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_2" />
+    <Switch
+        android:id="@+id/menu_settings_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_3" />
+    <Switch
+        android:id="@+id/menu_settings_4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_4"
+        android:visibility="gone"/>
+    <Switch
+        android:id="@+id/menu_settings_5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_5" />
+    <Switch
+        android:id="@+id/menu_settings_6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/settings_option_6" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- ACCOUNT -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_options_account_title"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/menu_settings_account_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="@string/settings_options_account_email"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/menu_settings_account_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="@string/settings_options_account_new_password" />
+    <EditText
+        android:id="@+id/menu_settings_account_new_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="@string/settings_options_account_new_password2" />
+    <Button
+        android:id="@+id/menu_settings_account_set_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:text="@string/settings_options_account_set_button"
+        android:onClick="onMenuSettingsAccSetClick"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/menu_settings_b_pp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:text="@string/settings_show_privacy_policy"/>
+</LinearLayout>

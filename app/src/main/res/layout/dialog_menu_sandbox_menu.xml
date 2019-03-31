@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/menu_dialog_sandbox_menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+            <ImageView
+                android:id="@+id/menu_dialog_sandbox_menu_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:cropToPadding="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <Button
+                android:id="@+id/menu_dialog_sandbox_menu_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/menu_dialog_sandbox_menu_1"/>
+            <Button
+                android:id="@+id/menu_dialog_sandbox_menu_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/menu_dialog_sandbox_menu_2"/>
+            <Button
+                android:id="@+id/menu_dialog_sandbox_menu_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/menu_dialog_sandbox_menu_3"/>
+            <Button
+                android:id="@+id/menu_dialog_sandbox_menu_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/menu_dialog_sandbox_menu_4"/>
+            <Button
+                android:id="@+id/menu_dialog_sandbox_menu_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/menu_dialog_sandbox_menu_5"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

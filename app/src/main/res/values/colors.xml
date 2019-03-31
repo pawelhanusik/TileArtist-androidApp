@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    OLD COLORS :D
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#99d6ff</color>
+    <color name="colorBackground">#1a80b6</color>
+    <color name="colorBackgroundSelected">#135e86</color>
+    <color name="colorBlack">#000000</color>
+    -->
+
+    <color name="colorPrimary">#5665b6</color>
+    <color name="colorPrimaryDark">#4855a6</color>
+    <color name="colorAccent">#99d6ff</color>
+    <color name="colorBackground">#1a80b6</color>
+    <color name="colorBackgroundSelected">#247099</color>
+    <color name="colorBlack">#000000</color>
+</resources>

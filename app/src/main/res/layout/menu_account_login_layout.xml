@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/menu_account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/menu_account_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/account_username"
+         />
+
+    <EditText
+        android:id="@+id/menu_account_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/account_password"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/menu_account_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/account_password2"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/menu_account_selectionLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/menu_account_button_selection_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonSelectionLoginClick"
+            android:textAllCaps="false"
+            android:text="@string/account_login_title"
+            />
+        <Button
+            android:id="@+id/menu_account_button_selection_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonSelectionRegisterClick"
+            android:textAllCaps="false"
+            android:text="@string/account_register_title"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/menu_account_button_selection_continue_without"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:onClick="onMenuAccountButtonSelectionContinueWithoutClick"
+        android:textAllCaps="false"
+        android:text="@string/account_continue_without"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menu_account_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonBackClick"
+            android:text="&lt;"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/menu_account_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonLoginClick"
+            android:text="@string/account_login"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/menu_account_button_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:onClick="onMenuAccountButtonRegisterClick"
+            android:text="@string/account_register"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
